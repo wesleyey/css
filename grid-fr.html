@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid</title>
+    <style>
+      .father {
+        display: grid;
+        grid-gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-columns: minmax(200px, 2fr) repeat(2, 1fr) 4fr;
+        /*min-content, max-content*/
+      }
+
+      .box1 {
+        background-color: aquamarine;
+      }
+      .box2 {
+        background-color: blue;
+      }
+      .box3 {
+        background-color: orange;
+      }
+      .box4 {
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A impedit quasi
+        quisquam sunt, rerum aliquam unde sint velit animi blanditiis, provident
+        asperiores. Voluptatum omnis ab, odio aliquam modi excepturi laborum.
+      </div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+  </body>
+</html>

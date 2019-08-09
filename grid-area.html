@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid</title>
+    <style>
+      .father {
+        display: grid;
+        grid-gap: 10px;
+        grid-auto-rows: 200px;
+        /*grid-auto-flow: column;*/
+        grid-template-areas:
+          "header header header"
+          "content content sidebar"
+          "content content sidebar"
+          "footer footer footer";
+      }
+
+      .box1 {
+        grid-area: header;
+        background-color: aquamarine;
+      }
+      .box2 {
+        grid-area: content;
+        background-color: blue;
+      }
+      .box3 {
+        grid-area: sidebar;
+        background-color: orange;
+      }
+      .box4 {
+        grid-area: footer;
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+  </body>
+</html>
